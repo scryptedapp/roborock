@@ -1,0 +1,3 @@
+[submodule "homebridge-xiaomi-roborock-vacuum"]
+	path = homebridge-xiaomi-roborock-vacuum
+	url = https://github.com/homebridge-xiaomi-roborock-vacuum/homebridge-xiaomi-roborock-vacuum.git
