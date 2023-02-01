@@ -5,13 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/fs/token_extractor.py",
-            "console": "integratedTerminal"
-        },
-        {
             "name": "Scrypted Debugger",
             "address": "${config:scrypted.debugHost}",
             "port": 10081,
@@ -23,7 +16,14 @@
             "sourceMaps": true,
             "localRoot": "${workspaceFolder}/out",
             "remoteRoot": "/plugin/",
-            "type": "pwa-node"
+            "type": "node"
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/fs/token_extractor.py",
+            "console": "integratedTerminal"
         }
     ]
 }

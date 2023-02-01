@@ -143,28 +143,28 @@ class RoborockVacuum extends ScryptedDeviceBase implements StartStop, Pause, Doc
 
     async start() {
         const device = await this.findDevice();
-        await device.activateCleaning();
         this.pollChanges();
+        await device.activateCleaning();
     }
     async stop() {
         const device = await this.findDevice();
-        await device.deactivateCleaning();
         this.pollChanges();
+        await device.deactivateCleaning();
     }
     async pause() {
         const device = await this.findDevice();
-        await device.pause();
         this.pollChanges();
+        await device.pause();
     }
     async resume() {
         const device = await this.findDevice();
-        await device.activateCleaning();
         this.pollChanges();
+        await device.activateCleaning();
     }
     async dock() {
         const device = await this.findDevice();
-        await device.activateCharging();
         this.pollChanges();
+        await device.activateCharging();
     }
 }
 
